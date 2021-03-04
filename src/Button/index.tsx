@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  label?: string
+  label?: string;
+  no: number;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -12,4 +13,4 @@ export const Button: React.FC<ButtonProps> = ({
   <button style={{ border: '5px green solid' }} {...otherProps}>
     {label ?? children}
   </button>
-)
+);
