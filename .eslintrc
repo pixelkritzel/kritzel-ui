@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "plugin:react/recommended"],
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "env": {
     "browser": true
@@ -17,5 +17,11 @@
       "version": "16"
     }
   },
-  "rules": {}
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-non-null-assertion": 0
+  },
+  "globals": {
+    "NODE_ENV": "readonly"
+  }
 }
